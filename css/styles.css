@@ -33,17 +33,16 @@ header {
 }
 
 .input-box {
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 30px;
-    padding-left: 30px;
     width: 100%;
 
 }
 
 #logo {
     width: 95px;
+    padding-top: 25px;
+    padding-left: 10px;
 }
 
 
@@ -57,13 +56,15 @@ form {
     display: flex;
     position: relative;
 	width: 1000px;
+    padding-top: 25px;
+    padding-left: 10px;
 }
 
 
 .input-box form input {
     height: 44px;
     border-radius: 22px;
-    width: 700px;
+    width: 650px;
     border: none;
     padding: 0 21px;
     font-size: 16px;
@@ -106,9 +107,11 @@ form {
     display: inline-flex;
     width: 130px;
     align-items: center;
-    padding: 10px;
     justify-content:space-between;
     cursor: pointer;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 10px;
 }
 
 #settins-icon, #settins-apps {
@@ -123,3 +126,56 @@ form {
 .icons-right img {
     border-radius: 50%;
 }
+
+
+#container-itens {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: 110px;
+    padding-bottom: 15px;
+}
+
+#container-itens li  {
+    display: inline-flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    min-width: 38px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#container-itens li:hover  {
+    background-color: var(--var4);
+}
+
+#container-itens li span  {
+    margin: 15px;
+    color: #f1f3f4;
+}
+
+.first-item {
+    background-color: var(--var3);
+}
+
+#container-itens .first-item:hover {
+    background-color: #2A4165;
+}
+
+#container-itens .first-item span{
+    color: #8ab4f8;
+}
+
+#container-itens #material-symbols-outlined {
+    margin: 0;
+}
+
+#container-itens #all-tool {
+    margin: 0;
+    margin-right: -15px;
+    margin-left: 10px;
+}
+
+
+

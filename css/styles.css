@@ -5,6 +5,7 @@
     --var3:#5e5a5a;
     --var4:#303134;
     --var5:#3C4043;
+    --var6:#bdc1c6;
     --fon1:'Open Sans', sans-serif;
     --fon2: 'Roboto', sans-serif;
 }
@@ -33,31 +34,37 @@ header {
 }
 
 .input-box {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    flex-grow: 1;
 
+}
+
+.top {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #logo {
     width: 95px;
-    padding-top: 25px;
-    padding-left: 10px;
+    padding: 35px;
 }
 
 
-.input-box  {
-    display: inline-flex;
-
-}
 
 form {
-
     display: flex;
+    flex-grow: 2;
     position: relative;
 	width: 1000px;
-    padding-top: 25px;
-    padding-left: 10px;
+    padding: 15px;
+ 
+
 }
 
 
@@ -80,6 +87,7 @@ form {
 	align-items: center;
 	width: 200px;
 	margin-left: -200px;
+ 
 
 }
 
@@ -104,19 +112,24 @@ form {
 }
 
 .icons-right {
-    display: inline-flex;
+    display: flex;
+    flex-grow: 1;
     width: 130px;
     align-items: center;
-    justify-content:space-between;
+    justify-content:right;
     cursor: pointer;
     position: relative;
-    padding-top: 25px;
-    padding-left: 10px;
+    margin-right: 15px;
+
 }
 
 #settins-icon, #settins-apps {
     border-radius: 50%;
-    padding: 7px;
+    margin: 10px;
+}
+
+#name-icon {
+    margin: 10px;
 }
 
 #settins-icon:hover,  #settins-apps:hover {
@@ -127,12 +140,29 @@ form {
     border-radius: 50%;
 }
 
+nav {
+    display: inline-flex;
+}
 
-#container-itens {
-    padding-left: 0;
-    margin-bottom: 0;
-    margin-left: 110px;
-    padding-bottom: 15px;
+.spaces {
+    width: 179px;
+    height: 100px;
+    display: flex;
+    flex-shrink: 1;
+}
+
+.container-itens {
+    padding: 0;
+    margin: 0;
+    padding-left: 2px;
+    position: relative;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-grow: 1;
 }
 
 #container-itens li  {
@@ -152,8 +182,9 @@ form {
 
 #container-itens li span  {
     margin: 15px;
-    color: #f1f3f4;
+    color: var(--var2)
 }
+
 
 .first-item {
     background-color: var(--var3);
@@ -175,6 +206,49 @@ form {
     margin: 0;
     margin-right: -15px;
     margin-left: 10px;
+
+}
+
+.second-item {
+    display: none;  
+    position: absolute;  
+    width: 50px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); 
+    z-index: 1;  
+    padding: 0; 
+}
+
+
+#container-itens li:hover .second-item {
+    display: block;   
+}
+
+.second-item li {
+    text-align: left;  
+}
+
+.second-item li span {
+    display: block;  
+    padding: 10px 20px;  
+    text-decoration: none;  
+    transition: background-color 0.3s ease;  
+}
+
+#submenu:target {
+    display: block;
+}
+
+.itens-rigth {
+    margin-left: 110px;
+}
+
+#container-itens .itens-rigth span{
+    color: var(--var6);
+}
+
+.safe {
+    float: right;
+    padding-right: 5px;
 }
 
 

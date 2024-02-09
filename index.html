@@ -25,7 +25,10 @@
 <body>
     <header>
       <div class="input-box">
-        <img id="logo" src="/img/google_logo.png" alt="Logo google"> 
+        <div class="top">
+          <img id="logo" src="/img/google_logo.png"  alt="Logo google"> 
+        </div>
+        
         <form action="">
             <input type="text" value="Alan Turing" name="search">
             <div class="icons-input">
@@ -49,21 +52,31 @@
       </div> 
       
       <nav>
+        <div class="spaces">
+
+        </div>
         <ul id="container-itens">
             <li class="first-item"><span>Todas</span></li>
             <li><span href="#">Imagens</span></li>
             <li><span href="#">Videos</span></li>
             <li><span href="#">Shopping</span></li>
             <li><span href="#">Noticias</span></li>
-            <li><span id="all-tool" href="#">Mais</span><span class="material-symbols-outlined">
+            <li>
+              <span id="all-tool" href="#">Mais</span>
+              <span class="material-symbols-outlined">
               arrow_drop_down
               </span>
+              <ul id="submenu" class="second-item">
+                <li><span>Livros</span></li>
+                <li><span>Maps</span></li>
+                <li><span>Voos</span></li>
+                <li><span>Finanças</span></li>
+              </ul>
             </li>
-            <li class="itens-rigth diff"><span href="#">Ferramentas</span></li>
-            <li class="itens-rigth"><span href="#">SafeSearch</span></li>
+            <li class="itens-rigth"><span href="#">Ferramentas</span></li>
+            <li class="itens-rigth safe"><span href="#">SafeSearch</span></li>
         </ul>
       </nav>
     </header>
-    
 </body>
 </html>
